@@ -9,7 +9,7 @@ app.set('views', __dirname + '/views');
 
 // req - request
 // res - result/response
-app.get('/', function(req, res){
+var zzz = app.get('/', function(req, res){
 	res.render('hello', {'name': 'Swig'});
 });
 
@@ -20,3 +20,4 @@ app.get('*', function(req, res){
 app.listen(8000);
 
 console.log('Express server started on port 8000');
+console.log(zzz);
