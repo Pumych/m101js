@@ -1,6 +1,3 @@
-
-// var express = require('express');
-// var cons = require('consolidate');
 var  MongoClient = require('mongodb').MongoClient;
 
 // Open the connection to the server
@@ -18,7 +15,6 @@ MongoClient.connect('mongodb://localhost:27017/test', function(err, db){
 		db.close();
 	});
 
-	// DEclare success
+	// Declare success
 	console.dir("Called findOne!");
 });
-
